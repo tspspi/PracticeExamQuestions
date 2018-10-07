@@ -1,5 +1,9 @@
 # Übungs-Prüfungsaufgabensammlung
 
+## Anmerkung zu pull requests
+
+In dieser Repository werden keine Pull-Requests akzeptiert, die proprietären or patentbehaftete Dateiformate (unter anderem MS Office Dokumente) akzeptiert.
+
 ## Format von Aufgaben
 
 Aufgaben stehen unter /Angaben zur Verfügung. Alle Aufgaben werden als UTF-8 TeX Segmente abgelegt. Jede Datei beinhaltet immer nur eine einzelne Aufgabe sowie zugehörige Metadaten:
