@@ -1,0 +1,58 @@
+\exkw{CS}
+\exkw{Strings}
+\exkw{Substring}
+\exkw{Console}
+\exkw{Dictionary}
+\exkw{while}
+\exquestion{Worte zählen}
+
+Schreibe ein Programm, dass über die Konsole eine beliebig lange Eingabe akzeptiert. Solange
+sie keine zwei aufeinanderfolgenden Leerzeilen einliest oder die Eingabe auf andere Art und Weise
+beendet wird, soll das Programm alle auftretenden Worte (jeweils durch beliebige Anzahl an
+Whitespace wie Leerzeichen oder Zeilenumbrüche getrennt) zählen.
+
+Um die Worte und Zähler zu speichern kann ein Dictionary eingesetzt werden. Das Dictionary wird mit
+
+\begin{lstlisting}
+   Dictionary<string, int> dict = new Dictionary<string, int>();
+\end{lstlisting}
+
+erstellt. Danach können Werte wie zu einem Array hinzugefügt oder geändert werden, es kann aber auch
+die Add Funktion genutzt werden:
+
+Hinzufügen eines noch nicht existierenden Eintrags:
+\begin{lstlisting}
+   dict.Add("string", 1);
+   // oder
+   dict["string"] = 1;
+\end{lstlisting}
+
+Ändern eines existierenden Eintrags:
+\begin{lstlisting}
+   dict["string"]++;
+\end{lstlisting}
+
+Um zu prüfen ob ein Eintrag existiert kann ContainsKey verwendet werden:
+
+\begin{lstlisting}
+   if(dict.ContainsKey("string")) {
+      // Key existiert
+   }
+\end{lstlisting}
+
+Die Werte können ebenfalls über den selben Weg wie ein Arrayzugriff ausgelesen werden:
+
+\begin{lstlisting}
+   int a = dict["string"];
+\end{lstlisting}
+
+Um alle Einträge eines Dictionaries anzuzeigen kann ein foreach genutzt werden:
+
+\begin{lstlisting}
+   foreach(KeyValuePair<string, int> kvp in dict) {
+      string key = kvp.Key;
+      int value = kvp.Value;
+   }
+\end{lstlisting}
+
+Erweitere das Programm nun so, dass die Worthäufigkeit in Prozent dargestellt wird.
