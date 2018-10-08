@@ -3,6 +3,7 @@
 ## Anmerkung zu pull requests
 
 In dieser Repository werden keine Pull-Requests akzeptiert, die proprietären or patentbehaftete Dateiformate (unter anderem MS Office Dokumente) akzeptiert.
+Desweiteren müssen alle Commits <a href="https://gist.github.com/tspspi/3a006c5a267e972821d36a084bbf4cc0#user-content-gpgcreate">mit GPG signiert werden</a>.
 
 ## Format von Aufgaben
 
