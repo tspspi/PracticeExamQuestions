@@ -1,0 +1,19 @@
+\exkw{Python}
+\exkw{while}
+\exkw{if}
+\exquestion{UPN Rechner}
+
+In der folgenden Übungsaufgabe soll ein UPN Rechner implementiert werden.
+Hierbei kann ein Nutzer Zahlen oder Rechenoperationen eingeben. Wird eine
+Zahl eingegeben, wird sie auf einen Stapel, der mit Hilfe einer Liste
+implementiert wird gelegt (\texttt{liste.add(...)}). Wird eine Rechenoperation eingegeben,
+werden die letzten 2 Einträge von der Liste geholt (das kann mit zwei
+aufeinanderfolgenden \texttt{n = liste.pop();} Operationen erfolgen), die entsprechende
+Rechenoperation ausgeführt und ihr Ergebnis wiederum mit \texttt{liste.add(...)} an das
+Ende der Liste angefügt sowie auf der Standardausgabe angezeigt. Hierbei sollen
+prinzipiell die bekannten Operationen ($+$,$-$,$/$,$*$,etc.) implementiert werden.
+
+Sofern möglich soll eine Überprüfung der Listenlänge realisiert werden, um im
+Fall einer Rechenoperation die z.B. zwei Argumente voraussetzt zu prüfen, ob
+wirklich mindestens zwei Zahlen in der Liste enthalten sind und sonst
+eine entsprechende Fehlermeldung angezeigt werden.
